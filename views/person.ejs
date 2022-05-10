@@ -1,0 +1,9 @@
+<%- include('header'); -%>
+
+
+<h3><%= person.name%></h3>
+<p><%= person.email%></p>
+<p><%= person.phonenumber%></p>
+<p>gick med: <%= person.date%></p>
+<p>Har sett <%= person.totalfilmswatched%> filmer</p>
+<button onclick="location.href='/persons/<%=person._id%>/delete' ">Ta bort medlem</button>

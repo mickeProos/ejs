@@ -1,0 +1,22 @@
+<%- include('header'); -%>
+
+
+<select onchange="location=this.value" name="sort" id="sort">
+  <option value="null" selected disabled>Sortera på:</option>
+  <option value="/persons/sort/1">Från A till Ö:</option>
+  <option value="/persons/sort/2">Från Ö till A:</option>
+  <option value="/persons">Initial ordning:</option>
+</select>
+
+  <ul>
+    
+      <% persons.forEach((person) => { %>
+        <h1> <%= person.name%> </h1>
+        <button onclick="location.href='/persons/<%= person._id%>'">Visa medlem</button>
+      <% }); %>
+    
+  </ul>
+
+  <%- include('footer'); -%>
+
+  

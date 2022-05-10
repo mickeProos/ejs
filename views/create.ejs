@@ -1,0 +1,23 @@
+
+  <%- include('header'); -%>
+
+  <form action="/create" method="post">
+    <label for="name">name</label>
+    <input type="text" id="name" name="name" style='text-transform:uppercase' required>
+    <br>
+    <label for="phonenumber">phonenumber</label>
+    <input type="text" id="phonenumber" name="phonenumber" required>
+    <br>
+    <label for="email">email</label>
+    <input type="text" id="email" name="email" required>
+    <br>
+    <label for="date">date of registration</label>
+    <input type="text" id="date" name="date" required>
+    <br>
+    <label for="totalfilmswatched">movies seen</label>
+    <input type="text" id="totalfilmswatched" name="totalfilmswatched" required>
+    <br>
+    <button>Save</button>
+  </form>
+
+  <%- include('footer'); -%>
